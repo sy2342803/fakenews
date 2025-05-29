@@ -1,0 +1,10 @@
+# Download latest version
+path = kagglehub.dataset_download("jillanisofttech/fake-or-real-news")
+
+print("Path to dataset files:", path)
+
+csv = pd.read_csv(os.path.join(path, "fake_or_real_news.csv"))
+
+test_df = pd.DataFrame(csv)
+
+test_df
